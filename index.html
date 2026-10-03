@@ -24,7 +24,8 @@
   --text-dim:   #94a3b4;
   --text-faint: #5d6b7c;
 
-  --mint:       #6ee7da;
+  --mint:       #7ef0e4;
+  --mint-lite:  #a8faf0;
   --mint-deep:  #2fb8ad;
   --gold:       #ffd68a;
 
@@ -196,10 +197,9 @@ main {
 .eyebrow {
   font-size: 12px;
   letter-spacing: .42em;
-  color: var(--mint);
+  color: var(--mint-lite);
   margin: 0 0 26px;
   text-transform: uppercase;
-  opacity: .9;
 }
 
 .hero h1 {
@@ -211,9 +211,10 @@ main {
 }
 .hero h1 b {
   font-weight: 700;
-  background: linear-gradient(105deg, #ffffff 8%, var(--mint) 52%, var(--gold) 96%);
+  background: linear-gradient(105deg, #ffffff 6%, var(--mint-lite) 44%, var(--gold) 96%);
   -webkit-background-clip: text;
   background-clip: text;
+  filter: drop-shadow(0 0 12px rgba(126,240,228,.5));
   color: transparent;
 }
 
@@ -386,10 +387,11 @@ main {
   font-size: clamp(20px, 3vw, 30px);
   letter-spacing: .16em;
   margin: 0 0 14px;
-  background: linear-gradient(100deg, #ffffff, var(--mint) 55%, var(--gold));
+  background: linear-gradient(100deg, #ffffff 4%, var(--mint-lite) 50%, var(--gold) 96%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  filter: drop-shadow(0 0 12px rgba(126,240,228,.45));
 }
 .epigraph span {
   font-size: 13px;
@@ -722,8 +724,10 @@ footer p { margin: 0 0 6px; }
         我是<b>黄世柱</b>
       </h1>
       <p class="hero-sub reveal" data-delay="2">
-        Hello everybody，这是我的初始版个人网站。很多方面还没有完善，
-        仅是搭建了一些框架而已。希望各位能品鉴一下并给出一些建议，谢谢！
+        Hello Every Body. 感谢您来参观我的个人网站，这目前只是我的初代版，
+        很多内容还没有完善，后续我会持续地向这个网站内输入内容，大家可以关注一下。
+        如果大家有啥建议，尽管提，您的建议是我前行最大的动力。
+        最后感谢各位的支持 ˚*̥(∗*⁰͈꒨⁰͈)*̥ 哇哦~
       </p>
       <div class="hero-cta reveal" data-delay="3">
         <a class="btn btn-solid" href="#journey">看看我在做什么</a>
@@ -778,7 +782,7 @@ footer p { margin: 0 0 6px; }
       <article class="card reveal" data-delay="1">
         <span class="card-idx">A</span>
         <h3>高考备考</h3>
-        <p>物理组，目标是 600。每天记错题，也记心态——把长跑拆成一段段小短跑。</p>
+        <p>物理组，每天记错题，也记心态——把长跑拆成一段段小短跑。</p>
         <span class="card-tag">进行中</span>
       </article>
       <article class="card reveal" data-delay="2">
