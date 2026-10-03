@@ -209,13 +209,12 @@ main {
   font-weight: 700;
   letter-spacing: -.015em;
 }
+/* 实心亮色 + text-shadow 光晕：不用 background-clip/filter，
+   因为 vivo 等浏览器会把渐变文字降级成近乎透明（实测 #4F6064） */
 .hero h1 b {
-  font-weight: 700;
-  background: linear-gradient(105deg, #ffffff 6%, var(--mint-lite) 44%, var(--gold) 96%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  filter: drop-shadow(0 0 12px rgba(126,240,228,.5));
-  color: transparent;
+  font-weight: 800;
+  color: var(--mint-lite);
+  text-shadow: 0 0 18px rgba(126,240,228,.55), 0 0 42px rgba(126,240,228,.28);
 }
 
 .hero-sub {
@@ -387,11 +386,9 @@ main {
   font-size: clamp(20px, 3vw, 30px);
   letter-spacing: .16em;
   margin: 0 0 14px;
-  background: linear-gradient(100deg, #ffffff 4%, var(--mint-lite) 50%, var(--gold) 96%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  filter: drop-shadow(0 0 12px rgba(126,240,228,.45));
+  font-weight: 600;
+  color: var(--mint-lite);
+  text-shadow: 0 0 18px rgba(126,240,228,.5), 0 0 40px rgba(126,240,228,.24);
 }
 .epigraph span {
   font-size: 13px;
